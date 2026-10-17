@@ -44,11 +44,15 @@
     .instagram-cta:active{transform:translateY(1px) scale(.985)}
     .instagram-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#f7e5de;color:#6e3c53;box-shadow:inset 0 1px rgba(255,255,255,.8),0 5px 10px rgba(27,10,20,.18)}
     .instagram-icon svg{width:21px;height:21px}
+    .service-track{align-items:flex-start}
+    .service{height:auto;aspect-ratio:var(--photo-ratio)}
+    .service:before{display:none}
+    .service-img{object-fit:cover}
     .portrait{animation:portrait-breathe 10s ease-in-out infinite alternate;transform-style:preserve-3d}
     .portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 25%;filter:saturate(.96) contrast(1.015)}
     .portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 72%,rgba(38,20,32,.15));pointer-events:none}
     .visual:hover .portrait{animation-play-state:paused}
-    .service-viewport{position:relative;transform:perspective(1100px) rotateX(var(--card-rx,0deg)) rotateY(var(--card-ry,0deg));transform-style:preserve-3d;border:1px solid rgba(251,224,214,.18);box-shadow:0 30px 60px -20px rgba(8,4,8,.48),0 12px 26px rgba(13,6,10,.2),inset 0 1px rgba(255,245,238,.18);transition:transform .42s cubic-bezier(.2,.8,.2,1),box-shadow .42s}
+    .service-viewport{position:relative;transform:perspective(1100px) rotateX(var(--card-rx,0deg)) rotateY(var(--card-ry,0deg));transform-style:preserve-3d;border:0;box-shadow:0 30px 60px -20px rgba(8,4,8,.48),0 12px 26px rgba(13,6,10,.2),inset 0 1px rgba(255,245,238,.18);transition:height .72s cubic-bezier(.22,.65,.24,1),transform .42s cubic-bezier(.2,.8,.2,1),box-shadow .42s}
     .service-viewport:hover{box-shadow:0 39px 76px -23px rgba(8,4,8,.54),0 15px 32px rgba(13,6,10,.23),inset 0 1px rgba(255,245,238,.23)}
     .service-viewport:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;background:linear-gradient(118deg,transparent 25%,rgba(255,237,228,.07) 45%,transparent 58%);transform:translateX(-105%);transition:transform 1s ease}
     .service-viewport:hover:after{transform:translateX(105%)}
@@ -87,9 +91,9 @@
           <h2 class="service-heading">Escolha o seu momento</h2>
           <div class="service-viewport" role="region" aria-roledescription="carrossel" aria-label="Produções de maquiagem" tabindex="0">
             <div class="service-track">
-              <article class="service" data-look="noiva" style="--photo:url('assets/look-noiva.jpg')"><img class="service-img" src="assets/look-noiva.jpg" alt="Noiva maquiada por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Noivas</strong><span class="service-sub">Para um dia inesquecível</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20para%20noiva." target="_blank" rel="noopener noreferrer">Consultar data</a></div></article>
-              <article class="service" data-look="formatura" style="--photo:url('assets/look-formatura.jpg')" aria-hidden="true" inert><img class="service-img" src="assets/look-formatura.jpg" alt="Maquiagem para formatura por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Formaturas</strong><span class="service-sub">Sua conquista em destaque</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20para%20formatura." target="_blank" rel="noopener noreferrer" tabindex="-1">Consultar data</a></div></article>
-              <article class="service" data-look="social" style="--photo:url('assets/look-social.jpg')" aria-hidden="true" inert><img class="service-img" src="assets/look-social.jpg" alt="Maquiagem social por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Eventos &amp; social</strong><span class="service-sub">Produções para celebrar</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20social." target="_blank" rel="noopener noreferrer" tabindex="-1">Consultar data</a></div></article>
+              <article class="service" data-look="noiva" style="--photo-ratio:1080 / 1079"><img class="service-img" src="assets/look-noiva.jpg" alt="Noiva maquiada por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Noivas</strong><span class="service-sub">Para um dia inesquecível</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20para%20noiva." target="_blank" rel="noopener noreferrer">Consultar data</a></div></article>
+              <article class="service" data-look="formatura" style="--photo-ratio:3024 / 4016" aria-hidden="true" inert><img class="service-img" src="assets/look-formatura.jpg" alt="Maquiagem para formatura por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Formaturas</strong><span class="service-sub">Sua conquista em destaque</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20para%20formatura." target="_blank" rel="noopener noreferrer" tabindex="-1">Consultar data</a></div></article>
+              <article class="service" data-look="social" style="--photo-ratio:1440 / 1910" aria-hidden="true" inert><img class="service-img" src="assets/look-social.jpg" alt="Maquiagem social por Lívia Bomfim"><div class="service-copy"><strong class="service-title">Eventos &amp; social</strong><span class="service-sub">Produções para celebrar</span><a class="service-link" href="https://wa.me/5582993339031?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20sobre%20maquiagem%20social." target="_blank" rel="noopener noreferrer" tabindex="-1">Consultar data</a></div></article>
             </div>
           </div>
           <div class="service-nav"><div class="service-dots" role="group" aria-label="Escolher produção"><button class="service-dot" type="button" data-index="0" aria-current="true" aria-label="Mostrar noivas"></button><button class="service-dot" type="button" data-index="1" aria-current="false" aria-label="Mostrar formaturas"></button><button class="service-dot" type="button" data-index="2" aria-current="false" aria-label="Mostrar eventos e maquiagem social"></button></div><span class="service-counter" aria-live="polite">01 / 03</span></div>
@@ -122,6 +126,7 @@
       function select(index){
         current=(index+slides.length)%slides.length;
         track.style.transform=`translateX(-${current*100}%)`;
+        viewport.style.height=`${slides[current].offsetHeight}px`;
         slides.forEach((slide,i)=>{
           const active=i===current;
           slide.inert=!active;
@@ -148,6 +153,7 @@
       viewport.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();select(current+(event.key==='ArrowRight'?1:-1));play()}});
       document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();else play()});
       reduce.addEventListener('change',play);
+      window.addEventListener('resize',()=>{viewport.style.height=`${slides[current].offsetHeight}px`});
       select(0);play();
     })();
   </script>
